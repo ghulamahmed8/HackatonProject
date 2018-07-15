@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/home.css" />
+
+</head>
+
+<body>
+
+    <div id="header" class="jumbotron">
+        <img src="images/logo.png" alt="LOGO" />
+        <h3 class="display-6 hh"> Pakistan's Largest MarketPlace</h3>
+    </div>
+
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active return_home" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active submit_an_ad" href="#">SUBMIT AN AD</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link browseCategory1" href="#">BROWSE AD BY CATEGORIES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+        </li>
+    </ul>
+
+    <form class=" jumbotron submit_ad">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Enter Your Ad title</label>
+            <input type="text" class="form-control ad_title" id="title" placeholder="Example input">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Enter your Ad description </label>
+            <input type="text" class="form-control ad_description" id="description" placeholder="Another input">
+        </div>
+      
+        <div class="form-group">
+                    <label for="formGroupExampleInput2"> Select your category </label>
+                <select id="myselect">
+                    <option value="1">Mobile</option>
+                    <option value="2">Electronics</option>
+                    <option value="3">Property</option>
+                    <option value="4">Cosmetics</option>
+                  </select> </div>
+
+           
+            <div class="form-group">
+                    <label for="exampleInputFile">Upload Photo </label>
+                    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+                  </div>
+
+               
+        <button type="submit" class="btn btn-primary" id="submission_ad">Submit Your Ad</button>
+    </form>
+
+
+
+
+    <form class=" jumbotron browseCategory bs1">
+        <h3 class="catSearch">SEARCH ADS USING CATEGORY SEARCH</h3> <br/> <hr/>
+            <div class="form-group">
+                        <label for="formGroupExampleInput2"> Select your category : </label>
+                    <select id="catSelect">
+                        <option value="1">Mobile</option>
+                        <option value="2">Electronics</option>
+                        <option value="3">Property</option>
+                        <option value="4">Cosmetics</option>
+                      </select> </div>
+     <button type="submit" class="btn btn-primary" id="gettingCategory" >Search Ad of this Category</button>
+        </form>
+    
+
+
+    <div id="ad" class="jumbotron ads">
+        <h1 class="display-4 ad_title">AD title goes here</h1>
+        <img src="images/nokia.png" height="225" width="225" class="ad_image" alt="logo">
+        <p class="lead ad_description">AD description goes here Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. 
+        </p>
+        <button type="submit" class="btn btn-warning">THIS IS DEFAULT SYSTEM GENERATED AD</button>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAKA90IRwjTzdn0tbNfvFRwSlME3vltOzQ",
+            authDomain: "hackatonproject8.firebaseapp.com",
+            databaseURL: "https://hackatonproject8.firebaseio.com",
+            projectId: "hackatonproject8",
+            storageBucket: "hackatonproject8.appspot.com",
+            messagingSenderId: "938337081852"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/home.js"></script>
+
+</body>
+</html>

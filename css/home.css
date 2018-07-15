@@ -1,0 +1,61 @@
+body{
+    width: 80%;
+    margin-left: 100px !important;
+}
+
+
+
+#header {
+    background-color: white !important;
+    border: 0.3px solid grey;
+    box-shadow: 8px 8px 8px 8px whitesmoke;
+    border-radius: 20px;
+}
+  
+
+.submit_ad , .browseCategory {
+    float: right;
+    width: 70%;
+    display: none;
+}
+
+h3.catSearch {
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ads , .bs1 , .submit_ad{
+    float: right;
+    width: 70% ;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+    border-left-style:solid;
+    border-left-width : 2px;
+    border-left-color: grey;
+    border-radius: 20px;
+}
+  
+.nav {
+    float: left;
+    height: 1000px;
+    width: 25%;
+    margin-left : 30px;
+   
+}
+
+.hh{
+    display: inline;
+    margin-left: 10px;
+}
+
+.ad_image{
+    float: right;
+}
+
+.ad_details{
+    margin-top:50px;
+    width: 100%;
+}
+
+
+
+
